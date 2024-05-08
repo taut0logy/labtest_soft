@@ -16,13 +16,13 @@ public class CircleTest {
     @Test
     public void testGetArea() {
         Circle circle = new Circle("Circle", new GreenColor());
-        Assert.assertEquals(0.0, circle.getArea());
+        Assert.assertEquals(Math.PI*0*0, circle.getArea(),0.0);
     }
 
     @Test
     public void testGetPerimeter() {
         Circle circle = new Circle("Circle", new GreenColor());
-        Assert.assertEquals(0.0, circle.getPerimeter());
+        Assert.assertEquals(2*Math.PI*0, circle.getPerimeter(),0.0);
     }
 
 }
