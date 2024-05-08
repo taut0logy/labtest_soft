@@ -21,6 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Red"
+            android:checked="true"
             />'
 
         <RadioButton
@@ -50,7 +51,8 @@
             android:id="@+id/circle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Circle" />
+            android:text="Circle"
+            android:checked="true"/>
 
         <RadioButton
             android:id="@+id/square"
@@ -81,7 +83,8 @@
         android:layout_height="wrap_content"
         android:text="Get Shape"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="158dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

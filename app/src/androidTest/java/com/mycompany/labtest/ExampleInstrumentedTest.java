@@ -33,14 +33,12 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void testColorShapeButton() {
-        //do ui test here
-
-        //select red from the colorPicker radiogroup
 
         Espresso.onView(withId(R.id.red)).perform(click());
         Espresso.onView(withId(R.id.square)).perform(click());
         Espresso.onView(withId(R.id.button)).perform(click());
         Espresso.onView(withId(R.id.textView)).check(ViewAssertions.matches(ViewMatchers.withText("Selected a Red Square")));
+
     }
 
 
